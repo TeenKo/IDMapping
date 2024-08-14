@@ -1,0 +1,16 @@
+{
+    "name": "gameModules.tools",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "GAME_MODULES_ENABLE"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
