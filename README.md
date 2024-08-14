@@ -4,6 +4,15 @@ IDMapping for Unity3D
 
 **Odin Inspector Asset recommended to usage with this Package (https://odininspector.com)**
 
+# Table of Contents
+
+- [Overview](#Overview)
+- [Getting Started](#Getting-Started)
+  - [Generating Scripts](#Generate-scripts)
+  - [Creating the ISO File](#Create-ISO)
+- [ISO Settings](#ISO-Settings)
+- [DEMO](#DEMO)
+
 # Overview
 - This tool serves as an alternative to enums with enhanced functionality.
 - You can use Scriptable Objects both for storing IDs and for keeping additional data.
@@ -62,7 +71,7 @@ This is particularly useful in cases where you need to compare an object's ID or
 ![image](https://github.com/user-attachments/assets/356f5f78-0e84-4108-a342-c3b33fada1d4)
 
 
-## DEMO
+# DEMO
 
 In the module, you can find a demo at **GameModules -> IdMapping -> Demo**. Simply open the scene and click the **Play** button. 
 If you don't have **Text Mesh Pro** installed, Unity may prompt you to install this plugin when you load the scene.
