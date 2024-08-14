@@ -7,10 +7,9 @@
   "version": "2024.0.0",
   "license": "MIT",
   "homepage": "https://github.com/TeenKo/IDMapping?tab=readme-ov-file#getting-started",
-  "keywords": [
-  ],
+  "keywords": [],
   "dependencies": {
-    "com.unity.textmeshpro": "3.0.8",
+    "com.unity.textmeshpro": "3.0.8"
   },
   "repository": {
     "type": "git",
