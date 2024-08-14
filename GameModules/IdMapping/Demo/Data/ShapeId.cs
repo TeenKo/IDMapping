@@ -3,9 +3,12 @@ namespace GameModules.IdMapping.Demo.Data
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using EditorTools;
     using Sirenix.OdinInspector;
     using UnityEngine;
+
+#if UNITY_EDITOR
+    using EditorTools;
+#endif
 
     [Serializable]
     [ValueDropdown("@GameModules.IdMapping.Demo.Data.ShapeId.GetFigureIds()", IsUniqueList = true, DropdownTitle = "Shape")]

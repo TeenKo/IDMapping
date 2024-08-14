@@ -122,9 +122,12 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using EditorTools;
     using Sirenix.OdinInspector;
     using UnityEngine;
+
+#if UNITY_EDITOR
+    using GameModules.EditorTools;
+#endif
 
     [Serializable]
     [ValueDropdown(""@{CreateNameSpace(FilePath)}.{Name}Id.Get{Name}Ids()"", IsUniqueList = true, DropdownTitle = ""{Name}"")]
@@ -225,6 +228,12 @@
         private string FixClassPath(string path, string name) =>
             string.IsNullOrEmpty(path) ? path : Path.Combine("Assets", path, $"{name}.cs");
 
-        private string CreateNameSpace(string path) => path.Replace("/", ".");
+        private string CreateNameSpace(string path) 
+        {
+            var result = path.Replace("/", ".");
+            result = result.Replace(" ", string.Empty);
+
+            return result;
+        }
     }
 }
